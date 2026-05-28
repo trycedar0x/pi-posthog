@@ -5,6 +5,10 @@
   "type": "module",
   "license": "MIT",
   "author": "trycedar0x",
+  "homepage": "https://github.com/trycedar0x/pi-posthog#readme",
+  "bugs": {
+    "url": "https://github.com/trycedar0x/pi-posthog/issues"
+  },
   "keywords": [
     "pi-package",
     "pi-extension",
@@ -21,6 +25,11 @@
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "packageManager": "npm@10.9.7",
   "pi": {
     "extensions": [
       "./src/index.ts"
@@ -29,7 +38,9 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "lint": "tsc --noEmit && vitest run"
+    "lint": "tsc --noEmit && vitest run",
+    "prepublishOnly": "npm run lint",
+    "release:dry": "npm pack --dry-run"
   },
   "dependencies": {},
   "peerDependencies": {

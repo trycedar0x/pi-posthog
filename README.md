@@ -1,5 +1,10 @@
 # @trycedar0x/pi-posthog
 
+[![npm version](https://img.shields.io/npm/v/%40trycedar0x%2Fpi-posthog.svg)](https://www.npmjs.com/package/@trycedar0x/pi-posthog)
+[![npm downloads](https://img.shields.io/npm/dm/%40trycedar0x%2Fpi-posthog.svg)](https://www.npmjs.com/package/@trycedar0x/pi-posthog)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![node >=22](https://img.shields.io/badge/node-%3E%3D22-brightgreen.svg)](package.json)
+
 Pi extension for querying PostHog from the pi coding agent.
 
 This is the complement to `@posthog/pi`: that package sends pi agent telemetry to PostHog, while this package gives pi read-only tools for asking questions of PostHog.
@@ -13,6 +18,12 @@ This is the complement to `@posthog/pi`: that package sends pi agent telemetry t
 It also registers `/posthog-status` to show whether required environment variables are present without printing secrets.
 
 ## Install
+
+```bash
+pi install npm:@trycedar0x/pi-posthog
+```
+
+Or install directly from GitHub before a release:
 
 ```bash
 pi install git:github.com/trycedar0x/pi-posthog
@@ -65,6 +76,7 @@ GET /api/projects/123/insights/?limit=5 from PostHog.
 npm install
 npm test
 npm run typecheck
+npm run release:dry
 ```
 
 ## License
