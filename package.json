@@ -1,0 +1,51 @@
+{
+  "name": "@trycedar0x/pi-posthog",
+  "version": "0.1.0",
+  "description": "Pi extension for querying PostHog from the pi coding agent",
+  "type": "module",
+  "license": "MIT",
+  "author": "trycedar0x",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "posthog",
+    "analytics",
+    "hogql"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trycedar0x/pi-posthog.git"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "tsc --noEmit && vitest run"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0",
+    "@types/node": "^22.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
