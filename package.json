@@ -1,5 +1,5 @@
 {
-  "name": "@trycedar0x/pi-posthog",
+  "name": "@trycedar/pi-posthog",
   "version": "0.1.0",
   "description": "Pi extension for querying PostHog from the pi coding agent",
   "type": "module",

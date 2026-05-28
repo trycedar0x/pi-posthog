@@ -1,7 +1,7 @@
-# @trycedar0x/pi-posthog
+# @trycedar/pi-posthog
 
-[![npm version](https://img.shields.io/npm/v/%40trycedar0x%2Fpi-posthog.svg)](https://www.npmjs.com/package/@trycedar0x/pi-posthog)
-[![npm downloads](https://img.shields.io/npm/dm/%40trycedar0x%2Fpi-posthog.svg)](https://www.npmjs.com/package/@trycedar0x/pi-posthog)
+[![npm version](https://img.shields.io/npm/v/%40trycedar%2Fpi-posthog.svg)](https://www.npmjs.com/package/@trycedar/pi-posthog)
+[![npm downloads](https://img.shields.io/npm/dm/%40trycedar%2Fpi-posthog.svg)](https://www.npmjs.com/package/@trycedar/pi-posthog)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![node >=22](https://img.shields.io/badge/node-%3E%3D22-brightgreen.svg)](package.json)
 
@@ -20,7 +20,7 @@ It also registers `/posthog-status` to show whether required environment variabl
 ## Install
 
 ```bash
-pi install npm:@trycedar0x/pi-posthog
+pi install npm:@trycedar/pi-posthog
 ```
 
 Or install directly from GitHub before a release:
